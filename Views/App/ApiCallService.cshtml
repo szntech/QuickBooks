@@ -1,0 +1,20 @@
+﻿@model string
+@{
+    ViewBag.Title = "API Call Response";
+}
+
+<h2>API Call Response</h2>
+
+<p style="word-wrap: break-word;">@Model</p>
+
+@using (Html.BeginForm("ApiCallService", "App", FormMethod.Post))
+{
+
+    <div><input type="submit" name="submitButton" value="refresh" ></div>
+    <br />
+
+    <br />
+}
+
+
+
